@@ -18,8 +18,8 @@ const apiUrl = "https://api.github.com/users/";
 function displayDetails(user) {
   const cardHTML = `
   <div class="card">
-        <div class="img" style="background-color: black;border-radius: 23">
-          <img src=${user.avatar_url} alt="${user.name}" style="border-radius: 253px;" />
+        <div class="img" style="background-color: black;border-radius: 243px">
+          <img src=${user.avatar_url} alt="${user.name}" style="border-radius: 243px;" />
         </div>
         <div class="info">
           <h1>${user.name}</h1>
