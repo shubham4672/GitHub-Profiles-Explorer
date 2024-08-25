@@ -14,3 +14,6 @@ GitHub Profiles Explorer is a web application that allows users to search and ex
 
 - **Responsive Design:**  
   Ensures that the application is fully accessible and user-friendly across all devices, including desktops, tablets, and mobile phones.
+
+- **Dark Mode:**
+  Allows users to toggle between light and dark themes for a personalized experience.
