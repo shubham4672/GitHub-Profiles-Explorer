@@ -31,12 +31,7 @@ function displayDetails(user) {
             <li><strong>${user.following} Following</strong></li>
             <li><strong>${user.public_repos} Repositories</strong></li>
           </ul>
-          <div class="repo">
-            <a href="#">Rep1</a>
-            <a href="#">Rep2</a>
-            <a href="#">Rep3</a>
-            <a href="#">Rep4</a>
-          </div>
+          <div class="repo"></div>
         </div>
       </div>
     `;
@@ -51,15 +46,17 @@ async function getUser(username) {
     console.log(data);
     displayDetails(data);
   } catch (err) {
-    if (username !== "") {
-      main.style.display = "none";
-      error.style.display = "block";
-      error.innerHTML = "User name not found";
-    }
+    main.style.display = "none";
+    error.style.display = "block";
+    error.innerHTML = "User name not found";
   }
 }
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  getUser(input.value);
+  const user = input.value;
+  if (user) {
+    getUser(input.value);
+    input.value = "";
+  }
 });

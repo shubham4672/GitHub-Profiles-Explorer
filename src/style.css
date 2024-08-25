@@ -39,12 +39,13 @@ body {
   position: absolute;
   font-size: 16px;
   cursor: pointer;
-  background-color: #4d4d89;
-  width: 9vw;
+  background-color: #bbdefb;
+  min-width: 9vw;
   right: 44px;
   top: 20px;
+  color: #231942;
   padding: 4px 14px;
-  border: 1px solid rgb(139, 137, 137);
+  border: 2px solid #22333b;
 }
 
 .form {
@@ -55,17 +56,17 @@ body {
 
 .input {
   margin-top: 4rem;
-  width: 50%;
-  background-color: #50505b;
+  min-width: 50%;
+  background-color: #bbdefb;
   padding: 1em;
   border-radius: 7px;
-  color: #fff;
+  color: #231942;
   font-size: large;
 }
 
 .input::placeholder {
   font-size: larger;
-  color: #fff;
+  color: #231942;
 }
 
 .input:focus {
@@ -73,14 +74,12 @@ body {
 }
 
 .card {
-  background-image: linear-gradient(to bottom, #185f4e, #1f7d36, #395420);
+  background-image: linear-gradient(135deg, #132a13, #31572c, #4f772d, #90a955);
   display: flex;
   padding: 0.5rem;
   color: black;
   margin: 1rem 1.5rem;
   border-radius: 5px;
-  min-width: 45vw;
-  max-width: 48vw;
 }
 
 .card .info {
@@ -106,14 +105,21 @@ body {
 }
 
 .error {
-  background-image: linear-gradient(to bottom, #185f4e, #1f7d36, #395420);
-  padding: 2.5rem 12rem;
+  background-image: linear-gradient(
+    to bottom,
+    #132a13,
+    #31572c,
+    #4f772d,
+    #90a955,
+    #ecf39e
+  );
+  padding: 1.5rem 7rem;
   color: rgb(255, 255, 255);
   margin: 1rem 1rem;
-  font-size: xx-large;
+  font-size: x-large;
   border-radius: 5px;
-  min-height: 10vh;
-  min-width: 45vw;
+  min-height: 5vh;
+  min-width: 30vw;
   display: none;
 }
 
