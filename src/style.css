@@ -40,27 +40,31 @@ body {
   font-size: 16px;
   cursor: pointer;
   background-color: #bbdefb;
-  min-width: 9vw;
-  right: 44px;
-  top: 20px;
+  min-width: 7vw;
+  top: 90%;
+  left: 47%;
   color: #231942;
   padding: 4px 14px;
-  border: 2px solid #22333b;
+  border: 1.5px solid #22333b;
+  border-radius: 25px;
 }
 
 .form {
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .input {
   margin-top: 4rem;
   min-width: 50%;
-  background-color: #bbdefb;
+  background-color: #d1eaff;
   padding: 1em;
   border-radius: 7px;
   color: #231942;
+  border: 1px solid #22333b;
   font-size: large;
 }
 
