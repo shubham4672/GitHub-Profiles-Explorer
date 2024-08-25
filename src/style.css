@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2a2a72;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.light {
+  background-image: url("./light.png");
+}
+
+.dark {
+  background-image: url("./dark.jpg");
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: absolute;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4d4d89;
+  width: 9vw;
+  right: 44px;
+  top: 20px;
+  padding: 4px 14px;
+  border: 1px solid rgb(139, 137, 137);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin-top: 4rem;
+  width: 50%;
+  background-color: #50505b;
+  padding: 1em;
+  border-radius: 7px;
+  color: #fff;
+  font-size: large;
+}
+
+.input::placeholder {
+  font-size: larger;
+  color: #fff;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.card {
+  background-image: linear-gradient(to bottom, #185f4e, #1f7d36, #395420);
+  display: flex;
+  padding: 0.5rem;
+  color: black;
+  margin: 1rem 1.5rem;
+  border-radius: 5px;
+  min-width: 45vw;
+  max-width: 48vw;
+}
+
+.card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info > h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  margin: 15px 20px;
+  position: relative;
+}
+
+.error {
+  background-image: linear-gradient(to bottom, #185f4e, #1f7d36, #395420);
+  padding: 2.5rem 12rem;
+  color: rgb(255, 255, 255);
+  margin: 1rem 1rem;
+  font-size: xx-large;
+  border-radius: 5px;
+  min-height: 10vh;
+  min-width: 45vw;
+  display: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.repo {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 35px;
+}

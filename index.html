@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Github Profiles</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.5/axios.min.js"
+      integrity="sha512-01Pe9P3mJM/4c80VuoYEGHlspKGbd9uWQe9HtdLsdTqV0CS1kz8ca44sinVEXEvlZNciMmsAjeEbm5ZxHC7yYg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="button">Toggle Mode</div>
+    <div class="bg dark">
+      <form class="form">
+        <input type="text" class="input" placeholder="Enter Github username" />
+      </form>
+      <div class="main"></div>
+      <div class="error">
+        <h1>Error: User Not Found</h1>
+      </div>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
