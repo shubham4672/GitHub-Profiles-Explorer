@@ -1,4 +1,4 @@
-"use strict";
+("use strict");
 
 const input = document.querySelector(".input");
 const form = document.querySelector(".form");
@@ -31,9 +31,6 @@ function displayDetails(user) {
             <li><strong>${user.following} Following</strong></li>
             <li><strong>${user.public_repos} Repositories</strong></li>
           </ul>
-          <div class="repo">
-            <a href="#">Time</a>
-          </div>
         </div>
       </div>
     `;
@@ -52,32 +49,9 @@ async function getUser(username) {
     error.style.display = "none";
     main.style.display = "block";
     displayDetails(data);
-    getRepos(data);
   } catch (err) {
     notFound();
   }
-}
-
-async function getRepos(username) {
-  try {
-    const { data } = await axios(apiUrl + username + "/repos?sort=created");
-    addReposToCard(data);
-  } catch (err) {
-    notFound();
-  }
-}
-
-function addReposToCard(repos) {
-  const reposEl = document.querySelector(".repo");
-  repos.forEach((repo) => {
-    const repoEl = document.createElement("a");
-    repoEl.classList.add("repo");
-    repoEl.href = repo.html_url;
-    repoEl.target = "_blank";
-    repoEl.innerText = repo.name;
-
-    reposEl.appendChild(repoEl);
-  });
 }
 
 form.addEventListener("submit", (e) => {
