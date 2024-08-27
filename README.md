@@ -9,9 +9,6 @@ GitHub Profiles Explorer is a web application that allows users to search and ex
 - **Profile Overview:**  
   Displays the user's profile details including avatar, bio, and follower count, providing a comprehensive overview of the user's presence on GitHub.
 
-- **Repository List:**  
-  Shows a list of public repositories associated with the user.
-
 - **Responsive Design:**  
   Ensures that the application is fully accessible and user-friendly across all devices, including desktops, tablets, and mobile phones.
 
